@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY .. /app
 
+RUN ls /app
 RUN python -m pip install --upgrade pip
 # Install Apple M1 specific packages. Remove if you use another hardware
 RUN apt-get update && apt-get -y install libpq-dev gcc && pip3 install psycopg2
