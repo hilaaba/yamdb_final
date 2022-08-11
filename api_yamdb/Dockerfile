@@ -2,7 +2,7 @@ FROM python:3.7-slim
 
 WORKDIR /app
 
-COPY .. .
+COPY .. /app
 
 RUN python -m pip install --upgrade pip
 # Install Apple M1 specific packages. Remove if you use another hardware
