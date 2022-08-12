@@ -9,4 +9,4 @@ RUN python -m pip install --upgrade pip
 RUN apt-get update && apt-get -y install libpq-dev gcc && pip3 install psycopg2
 RUN pip3 install -r api_yamdb/requirements.txt --no-cache-dir
 
-CMD ["sh", "run.sh"]
+CMD ["sh", "api_yamdb/run.sh"]
