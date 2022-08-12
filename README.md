@@ -2,6 +2,9 @@
 ---
 ![yamdb workflow](https://github.com/hilaaba/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
+## Адрес сервера
+http://84.201.162.16/redoc/
+
 ## Краткое описание проекта YaMDb
 Проект YaMDb собирает отзывы пользователей на произведения.
 Произведения делятся на категории: "Книги", "Фильмы", "Музыка".
