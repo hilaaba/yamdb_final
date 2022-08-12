@@ -8,6 +8,6 @@ RUN python -m pip install --upgrade pip
 # Install Apple M1 specific packages. Remove if you use another hardware
 RUN apt-get update && apt-get -y install libpq-dev gcc && pip3 install psycopg2
 RUN pip3 install -r api_yamdb/requirements.txt --no-cache-dir
-RUN ls
+WORKDIR /api_yamdb
 
-CMD ["sh", "api_yamdb/run.sh"]
+CMD ["sh", "run.sh"]
