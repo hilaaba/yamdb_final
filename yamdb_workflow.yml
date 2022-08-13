@@ -46,7 +46,7 @@ jobs:
         with:
           file: api_yamdb/Dockerfile
           push: true
-          tags: hilaaba/api_yamdb:v1.00
+          tags: hilaaba/api_yamdb:latest
 
   deploy:
     runs-on: ubuntu-latest
@@ -60,7 +60,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/api_yamdb:v1.00
+            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/api_yamdb:latest
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env

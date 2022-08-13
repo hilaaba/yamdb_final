@@ -9,7 +9,7 @@ services:
       - ./.env
 
   web:
-    image: hilaaba/api_yamdb:v1.00
+    image: hilaaba/api_yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
